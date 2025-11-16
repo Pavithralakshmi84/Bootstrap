@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Chennai Job Vacancy Portal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        .hero-section {
+            background: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1400&q=80') no-repeat center center;
+            background-size: cover;
+            height: 400px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+        }
+
+        .job-card {
+            transition: box-shadow 0.3s ease-in-out;
+        }
+
+        .job-card:hover {
+            box-shadow: 0 0 15px rgba(0, 123, 255, 0.5);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+            <div class="container">
+                <a class="navbar-brand" href="#">Chennai Job Vacancy Portal</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+                    aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navMenu">
+                    <ul class="navbar-nav ms-auto ">
+                        <li class="nav-item"><a class="nav-link active text-primary fw-bold" href="#Home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link active text-primary fw-bold" href="#Job">Jobs</a></li>
+                        <li class="nav-item"><a class="nav-link active text-primary fw-bold" href="#Companies">Companies</a></li>
+                        <li class="nav-item"><a class="nav-link active text-primary fw-bold" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="Home" class="hero-section text-center">
+        <div>
+            <h1>Find Your Dream Job in Chennai</h1>
+            <p class="lead">Latest Job Openings & Career Opportunities</p>
+
+        </div>
+    </section>
+
+    <section id="Job" class="container my-5" id="search">
+        <form class="row g-3 justify-content-center">
+            <div class="col-md-4">
+                <input type="text" class="form-control" placeholder="Job title or keyword" />
+            </div>
+            <div class="col-md-3">
+                <input type="text" class="form-control" placeholder="Company" />
+            </div>
+            <div class="col-md-3">
+                <input type="text" class="form-control" placeholder="Location (Chennai)" />
+            </div>
+            <div class="col-md-2">
+                <button type="submit" class="btn btn-info w-100">Search</button>
+            </div>
+        </form>
+    </section>
+
+    <section class="container my-5" id="jobs">
+        <h2 class="mb-4 text-center"> Job Openings</h2>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+                <div class="card job-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Software Developer</h5>
+                        <p class="card-text"><strong>Company:</strong> HCL TECH</p>
+                        <p class="card-text"><strong>Location:</strong> Chennai, Tamil Nadu</p>
+                        <p class="card-text">Build and maintain web applications using modern JavaScript frameworks.</p>
+                        <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#applyModal">Apply
+                            Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card job-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Digital Marketing Executive</h5>
+                        <p class="card-text"><strong>Company:</strong> Athena Health</p>
+                        <p class="card-text"><strong>Location:</strong> Chennai, Tamil Nadu</p>
+                        <p class="card-text">Manage online campaigns, SEO, and social media marketing initiatives.</p>
+                        <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#applyModal">Apply
+                            Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card job-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Graphic Designer</h5>
+                        <p class="card-text"><strong>Company:</strong> Aviation</p>
+                        <p class="card-text"><strong>Location:</strong> Chennai, Tamil Nadu</p>
+                        <p class="card-text">Create visual content for branding, advertising, and digital campaigns.</p>
+                        <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#applyModal">Apply
+                            Now</button>
+                    </div>
+                </div>
+            </div>
+             <div class="col-md-6 col-lg-4">
+                <div class="card job-card  ">
+                    <div class="card-body ">
+                        <h5 class="card-title ">Front-End Web Developer</h5>
+                        <p class="card-text"><strong>Company:</strong> Dell</p>
+                        <p class="card-text"><strong>Location:</strong> Chennai, Tamil Nadu</p>
+                        <p class="card-text">Create visual content for branding, advertising, and digital campaigns.</p>
+                        <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#applyModal">Apply
+                            Now</button>
+                    </div>
+                </div>
+            </div>
+    
+
+
+    <section id="Companies" class="container text-center my-5">
+
+        <h3>Top Companies Hiring in Chennai</h3>
+        <p>Explore opportunities with leading companies in various industries.</p>
+    </section>
+    <div class="row row-cols-1 row-cols-md-4 g-4 justify-content-center text-center">
+        <div class="col">
+            <div class="card h-100 border-0">
+                <img src="asset/zoho.png" class="card-img-top mx-auto" style="max-height: 60px; width: auto;"
+                    alt="Zoho Logo" />
+                <div class="card-body">
+                    <h5 class="card-title">Zoho</h5>
+                    <p class="card-text">A leading SaaS company known for workplace and productivity software.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100 border-0">
+                <img src="asset/sales.png" class="card-img-top mx-auto" style="max-height: 60px; width: auto;"
+                    alt="Salesforce Logo" />
+                <div class="card-body">
+                    <h5 class="card-title">Salesforce</h5>
+                    <p class="card-text">Pioneer in CRM software and cloud computing solutions.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 border-0">
+                <img src="asset/wipro.png" class="card-img-top mx-auto" style="max-height: 60px; width: auto;"
+                    alt="Wipro Logo" />
+                <div class="card-body">
+                    <h5 class="card-title">Wipro</h5>
+                    <p class="card-text">One of India’s largest IT consulting and services companies.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 border-0">
+                <img src="asset/info.png" class="card-img-top mx-auto" style="max-height: 60px; width: auto;"
+                    alt="Infosys Logo" />
+                <div class="card-body">
+                    <h5 class="card-title">Infosys</h5>
+                    <p class="card-text">Global leader in next-gen digital services and consulting.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 border-0">
+                <img src="asset/ibm.png" class="card-img-top mx-auto" style="max-height: 60px; width: auto;"
+                    alt="IBM Logo" />
+                <div class="card-body">
+                    <h5 class="card-title">IBM</h5>
+                    <p class="card-text">Multinational technology and consulting company with diverse expertise.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 border-0">
+                <img src="asset/atos.png" class="card-img-top mx-auto" style="max-height: 60px; width: auto;"
+                    alt="Atos Logo" />
+                <div class="card-body">
+                    <h5 class="card-title">Atos</h5>
+                    <p class="card-text">Global leader in digital transformation and managed services.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <!-- Job Listings -->
+    
+    </section>
+    <div class="modal fade" id="applyModal" tabindex="-1" aria-labelledby="applyModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <form class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="applyModalLabel">Apply for Job</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-2">
+                        <label for="name" class="form-label">Full Name</label>
+                        <input type="text" class="form-control" id="name" required />
+                    </div>
+                    <div class="mb-2">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" required />
+                    </div>
+                    <div class="mb-2">
+                        <label for="resume" class="form-label">Upload Resume</label>
+                        <input type="file" class="form-control" id="resume" />
+                    </div>
+                    <div class="mb-2">
+                        <label for="cover" class="form-label">Cover Letter</label>
+                        <textarea class="form-control" id="cover" rows="3"></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-success">Submit Application</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+  
+
+        <section class="container my-5 bg-info"  id="contact">
+           
+
+
+            <div class="row mt-2 d-flex justify-content-start">
+ <h2 class=" mb-4">Contact Us</h2>
+                <h5>Address</h5>
+                <p>Department of Employment & Training<br />Old Alandur Road, Guindy<br />Chennai - 600032, Tamil Nadu
+                </p>
+            
+
+            <h5>Email</h5>
+            <p><a href="mailto:chennaiprivatejobs@gmail.com">chennaiprivatejobs@gmail.com</a></p>
+           
+
+            <h5>Phone</h5>
+            <p>+91 44 2250 1234</p>
+           
+            </div>
+        </section>  <footer class="bg-info text-white text-center p-3  m-5">
+        &copy; 2025 Chennai Job Vacancy Portal
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
